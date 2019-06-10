@@ -117,6 +117,7 @@
 
   [*To make your git account*](https://github.com/)
 
-  *add your remote Repository URL*
+  *add your remote Repository*
   ```
+  git remote add origin https://yourremoteRepositoriesURL
   ```
