@@ -1,4 +1,4 @@
-# To Do List
+# *To Do List*
 
  - [ ] ***install Home brew***
 
@@ -97,10 +97,6 @@
  export PATH=$GOPATH/bin:$PATH
  ```
 
-
-
- - [ ] ***install ginkgo***
-
  - [ ] ***install GitHub***
 
   ```
@@ -108,16 +104,35 @@
   ```
   *set global Configuration*
   ```
-  git config --global user.name "Your Name"
+  git config --global user.name <Your Name>
   ```
-
   ```
-  git config --global user.email "Youraddress@gmail.com"
+  git config --global user.email <Youraddress@gmail.com>
   ```
 
   [*To make your git account*](https://github.com/)
 
-  *add your remote Repository*
+  *add your remote Repository URL*
+
   ```
-  git remote add origin https://yourremoteRepositoriesURL
+  git remote add origin <Your Remote Repository>
   ```
+
+- [ ] ***install ginkgo***
+
+  ```
+
+  ```
+
+- [ ] power-line
+
+  [How to Change Power-line](https://choco-late3.hatenablog.com/entry/2018/03/05/185756)
+
+
+- [ ] setting.json
+
+  ```
+  ~/Library/Application Support/Code/User
+  ```
+
+- [ ] ***How to use plantuml in Atom***
