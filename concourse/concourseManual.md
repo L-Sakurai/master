@@ -33,7 +33,7 @@
 - [ ] ***Fly Login***
 
   `fly --target <Target-name> login --concourse-url <Concourse-Deploy-URL> -u <User> -p <Pass> `
-
+  
   ```
   fly --target tutorial login --concourse-url http://127.0.0.1:8080 -u test -p test
   ```
@@ -55,15 +55,15 @@
 
   ```
   cat ~/.flyrc
-targets:
-  tutorial:
-    api: http://127.0.0.1:8080
-    team: main
-    token:
-      type: Bearer
-      value: <Mask Credential info>
+  targets:
+    tutorial:
+      api: http://127.0.0.1:8080
+      team: main
+      token:
+        type: Bearer
+        value: <Mask Credential info>
   ```
-
+ 
 - [ ] ***Set Sample Pipeline***
 
   *get Sample [pipeline.yml](  https://github.com/starkandwayne/concourse-tutorial/blob/master/tutorials/basic/basic-pipeline/pipeline.yml
@@ -85,12 +85,13 @@ targets:
             run:
               path: echo
               args: [hello world]
+              
   ```
 
   *setPipeline*
 
   ```
-    fly -t tutorial set-pipeline --pipeline Hello-Concourse --config ./concourse_opt/pipeline.yml
+  fly -t tutorial set-pipeline --pipeline Hello-Concourse --config ./concourse_opt/pipeline.yml
   jobs:
     job job-hello-world has been added:
   + name: job-hello-world
