@@ -51,4 +51,3 @@ function sendHttpPost(message){
 
    UrlFetchApp.fetch("https://notify-api.line.me/api/notify",options);
 }
-
