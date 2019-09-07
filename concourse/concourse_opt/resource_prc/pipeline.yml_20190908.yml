@@ -1,0 +1,15 @@
+resources:
+- name: my-resource
+  type: git
+  source:
+    uri: https://github.com/L-Sakurai/master.git
+    branch: concourse_wip01
+
+jobs:
+- name: read-my-resource
+  public: true
+  plan:
+  - get: my-resource
+  - task: my-task
+    file: my-resource/concourse/concourse_opt/resource-repo/my-prc/myCustomTask.yml
+    
