@@ -3,7 +3,7 @@ resources:
   type: git
   source:
     uri: https://github.com/L-Sakurai/master.git
-    branch: concourse_wip01
+    branch: master
 
 jobs:
 - name: read-my-resource
