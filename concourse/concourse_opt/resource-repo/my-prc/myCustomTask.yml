@@ -7,4 +7,4 @@ image_resource:
 
 run:
   path: echo
-  args: [Status was Changed!(--)OK!]
+  args: [Status was Changed!!(--)OK!]
