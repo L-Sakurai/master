@@ -6,5 +6,5 @@ image_resource:
   source: {repository: busybox}
 
 run:
-  path: ls
-  args: [-a]
+  path: echo
+  args: [Status was Changed! :$data]
