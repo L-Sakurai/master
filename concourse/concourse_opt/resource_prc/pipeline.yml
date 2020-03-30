@@ -1,15 +1,16 @@
 resources:
-- name: resource-tutorial
+- name: my-resource
   type: git
   source:
-    uri: https://github.com/starkandwayne/concourse-tutorial.git
-    branch: develop
+    uri: https://github.com/L-Sakurai/master.git
+    branch: concourse_test
 
 jobs:
-- name: job-hello-world
+- name: read-my-resource
   public: true
   plan:
-  - get: resource-tutorial
-  - task: hello-world
-    file: resource-tutorial/tutorials/basic/task-hello-world/task_hello_world.yml
+  - get: my-resource
+    trigger: true
+  - task: my-task
+    file: my-resource/concourse/concourse_opt/resource-repo/my-prc/myCustomTask.yml
     

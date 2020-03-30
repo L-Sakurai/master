@@ -7,4 +7,4 @@ image_resource:
 
 run:
   path: echo
-  args: [From My GitHub Resource]
+  args: [Status was Changed!!(^^)OK!]
